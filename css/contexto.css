@@ -14,3 +14,18 @@
     border: 10px solid rgb(49, 49, 49);
     margin: 20px;
 }
+
+@media screen and (max-width: 580px) {
+    .img1{
+        width: 300px;
+    }
+
+    .texto1{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .video{
+        width: 200px;
+    }
+  }

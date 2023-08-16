@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="barra.js"defer></script>
+    <script src="pizza.js"defer></script>
+    <script src="perfiletario.js" defer></script>
+    <link rel="stylesheet" href="../css/barra.css">
+    <link rel="stylesheet" href="../css/perfiletario.css">
+    <title>Espírito Santo | Dados</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>Dados</h1>
+        </div>
+        <br>
+        <div class="links">
+            <a class="link" href="../index.html">Principal</a>
+            <a class="link" href="./c_historico.html">Contexto Histórico</a>
+            <a class="link" href="./dados.html">Dados</a>
+            <a class="link" href="./sobre.html">Sobre</a>
+        </div>    
+    </header>
+    <div class="outrosgraficos">
+        <div class="link1">
+          <a class="link" href="./dados.html">Pizza</a>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="pizza">
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          
+          <script>
+            const ctx = document.getElementById('myChart');
+          
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Vila Valério', 'Pinheiros', 'Guaçuí', 'Linhares', 'Aracruz', 'Alfonso Cláudio'],
+                datasets: [{
+                  label: '5 regiões com maior numero de resgatados',
+                  data: [70, 56, 12, 11, 10, 10],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+    </div>
+    <br><br>
+    <div class="mapa">
+        <img class="imgmapa" src="../img/chainsaw.jpg" alt="Mapa2">
+        <div class="atividades">
+            <p>Atividades mais exercidas pelos trabalhadores resgatados</p>
+            <p>1 - Operador de motoserra</p>
+            <p>2 - Trabalhador Agropecuário em Geral</p>
+            <p>3 - Trabalhador da Pecuária (Bovino Corte)</p>
+            <p>4 - Operador de Salina</p>
+            <p>5 - Servente de Obras</p>
+        </div>
+    </div>
+    <br><br>
+
+<footer>
+    <div class="esquerda">
+        <h3>André & João</h3>
+        <h4>
+          André & João emails<br>
+          rubikjoaov@gmail.com<br>
+          andrelisboabx8@gmail.com
+        </h4>
+    </div>
+    <div class="center">
+        <h4>© 2023 - André & João</h4>
+    </div>
+    <div class="direita">
+        <h3>Localização</h3>
+        <h4>
+            Rua. Rio de Janeiro<br>
+            N 69°
+        </h4>
+    </div>
+</footer>
+</body>
+</html>

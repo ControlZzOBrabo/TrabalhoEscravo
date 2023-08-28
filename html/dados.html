@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="shortcut icon" href="../img/favicon.webp" type="image/webp">
     <script src="barra.js"defer></script>
     <script src="pizza.js"defer></script>
+    <script src="../dados.js"defer></script>
     <script src="perfiletario.js" defer></script>
     <link rel="stylesheet" href="../css/perfiletario.css">
     <title>Espírito Santo | Dados</title>
@@ -23,13 +25,19 @@
             <a class="link" href="./c_historico.html">Contexto Histórico</a>
             <a class="link" href="./dados.html">Dados</a>
             <a class="link" href="./sobre.html">Sobre</a>
+            <a class="link" href="./dados_matematicos.html">Dados Matemáticos</a>
         </div>    
     </header>
 
     <div class="outrosgraficos">
-      <div class="link1">
-        <a class="link" href="./barra.html">Barra</a>
+      <h1>Tipos de Gráficos</h1>
+        <div class="link1">
+        <a class="link" href="./grafico_barra.html">Barra</a>
+        <a class="link" href="./grafico_area.html">Area</a>
+        <a class="link" href="./grafico_linha.html">Linha</a>
+        <a class="link" href="./dados.html">>Pizza<</a>
       </div>
+      
     </div>
 <br><br>
     <div class="pizza">
@@ -58,28 +66,46 @@
       options: {
         title: {
           display: true,
-          text: "setores economicos frequentemente envolvidos com trabalho analago a escravidão"
+          text: "Setores economicos frequentemente envolvidos com trabalho analago a escravidão"
         }
       }
     });
+    
     </script>
-       <!-- <div class="main" style="width: 800px; height: 600px;">
-        <canvas id="grafico_barras"></canvas>
-    </div> -->
-    </div>
     <br><br>
-<div class="mapa">
-    <img class="imgmapa" src="../img/MAPA.png" alt="Mapa1">
-    <p>Jovens sobreviventes de tráfico de pessoas com acompanhamento pelo PAEFI no CREAS</p>
-</div>
+     </div>
+     <br><br>
+    <div class="olamundo">
+
+   <h3>Cálculo de Média, Variança e Desvio Padrão do dados</h3>
+    <div class="botao">
+
+    <button id="media">calcular</button>
+    <br><br>
+  </div>
+  <div class="resposta">
+    <div id="med_idad"></div>
+    <br>
+    <div id="varianc"></div>
+    <br>
+    <div id="desv_pad"></div>
+    <br>
+    <br>
+  </div>
+    
+  
+  </div>
+
+    
+
 <br><br>
 <footer>
     <div class="esquerda">
         <h3>André & João</h3>
         <h4>
-            André & João é uma empresa<br>
-            sem fins lucrativos.<br>
-            Apenas Informativos.
+          André & João emails<br>
+          rubikjoaov@gmail.com<br>
+          andrelisboabx8@gmail.com
         </h4>
     </div>
     <div class="center">

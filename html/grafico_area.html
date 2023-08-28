@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/area.css">
+    <link rel="stylesheet" href="../css/perfiletario.css">
+    <script src="../formula_area.js"defer></script>
+    <title>Espírito Santo | Dados</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>Dados</h1>
+        </div>
+        <br>
+        <div class="links">
+            <a class="link" href="../index.html">Principal</a>
+            <a class="link" href="./c_historico.html">Contexto Histórico</a>
+            <a class="link" href="./dados.html">Dados</a>
+            <a class="link" href="./sobre.html">Sobre</a>
+            <a class="link" href="./dados_matematicos.html">Dados Matemáticos</a>
+        </div>    
+    </header>
+    <div class="outrosgraficos">
+        <h1>Tipos de Gráficos</h1>
+        <div class="link1">
+            <a class="link" href="./grafico_barra.html">Barra</a>
+            <a class="link" href="./grafico_area.html">>Area<</a>
+            <a class="link" href="./grafico_linha.html">Linha</a>
+            <a class="link" href="./dados.html">Pizza</a>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="jesuscristo">
+        <div class="main" style="width: 800px; height: 600px;">
+        <h3>Raça das pessoas resgatas de  2017 a 2022</h3>
+        <canvas id="chartContainer"></canvas>
+        </div>
+    </div>
+    <br><br>
+    <div class="olamundo">
+
+        <h3>Cálculo de Média, Variança e Desvio Padrão do dados</h3>
+         <div class="botao">
+     
+         <button id="media">calcular</button>
+         <br><br>
+       </div>
+    <div class="resposta">
+        <div id="med_idad"></div>
+         <br>
+         <div id="varianc"></div>
+         <br>
+         <div id="desv_pad"></div>
+         <br>
+         <br>
+    </div>
+         
+       
+       </div>
+    <br><br>
+    <footer>
+        <div class="esquerda">
+            <h3>André & João</h3>
+            <h4>
+              André & João emails<br>
+              rubikjoaov@gmail.com<br>
+              andrelisboabx8@gmail.com
+            </h4>
+        </div>
+        <div class="center">
+            <h4>© 2023 - André & João</h4>
+        </div>
+        <div class="direita">
+            <h3>Localização</h3>
+            <h4>
+                Rua. Rio de Janeiro<br>
+                N 69°
+            </h4>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function () {
+            var chart = new Chart(document.getElementById("chartContainer"), {
+                type: "line",
+                data: {
+                    labels: ["parda", "branca", "preto", "amarelo"],
+                    datasets: [{
+                        label: "pesoas salvas",
+                        data: [30, 6, 6, 4],
+                        borderColor: "white",
+                        backgroundColor: "#00a8ff"
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: "pessoas"
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: "Quarter"
+                            }
+                        }
+                    }
+                }
+            });
+        };
+    </script>
+</body>
+</html>

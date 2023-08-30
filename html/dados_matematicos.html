@@ -14,31 +14,58 @@
 <body>
     <header>
         <div class="head">
-            <h1>Dados</h1>
+            <h1 class="responsive-title">Formulas Matemáticas</h1>
         </div>
         <br>
         <div class="links">
             <a class="link" href="../index.html">Principal</a>
             <a class="link" href="./c_historico.html">Contexto Histórico</a>
-            <a class="link" href="./dados.html">Dados</a>
+            <a class="link" href="./dados.html">Estatisticas</a>
             <a class="link" href="./sobre.html">Sobre</a>
-            <a class="link" href="./dados_matematicos.html">Dados Matemáticos</a>
+            <a class="link" href="./dados_matematicos.html">Formulas Matemáticas</a>
         </div>    
     </header>
     <div class="corpo">
         <br>
         <div class="texto1">
       <h1>Formulas Matematicas</h1> 
-      <h3>Estas foram as Fórmulas utilizadas</h3>  
-      <h3>
+      <h3>Essas foram as Fórmulas matematicas utilizadas para fazer as Estatisticas do site</h3>  
+      <h3 class="image-container">
         <img class="img1" src="../img/media aritmetica.png" alt="img3"><br>
         <img class="img1" src="../img/media ponderada.png" alt="img3"><br>
         <img class="img1" src="../img/variança.png" alt="img3"><br>
         <img class="img1" src="../img/desvio padrao.png" alt="img3"><br>
-      </h3>
+    </h3>
+    <style>
+        .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.img1 {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+    
+}
+.responsive-title {
+    text-align: center; 
+    font-size: 2.5rem; 
+    padding: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .responsive-title {
+        font-size: 1.8rem;
+    }
+}
+    </style>
+      </div>
       <br><br>
-      
       <footer>
+    
         <div class="esquerda">
             <h3>André & João</h3>
             <h4>
@@ -60,3 +87,5 @@
     </footer>
     </body>
     </html>
+</body>
+</html>
